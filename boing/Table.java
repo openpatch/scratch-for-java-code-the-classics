@@ -81,6 +81,7 @@ public class Table extends Stage {
 
           if (scoreLeft > 9) {
             this.getWindow().transitionToStage(new GameOver(), 300);
+            this.stopSound("theme");
           }
 
           this.digitLeft.switchCostume("1" + scoreLeft);
