@@ -1,6 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.Sprite;
+import org.openpatch.scratch.*;
 
 public class Digit extends Sprite {
 

@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.extensions.math.Random;
-import org.openpatch.scratch.Stage;
+import org.openpatch.scratch.*;
 
 public class Table extends Stage {
 
@@ -80,7 +79,7 @@ public class Table extends Stage {
           this.scoreLeft++;
 
           if (scoreLeft > 9) {
-            this.getWindow().transitionToStage(new GameOver(), 300);
+            Window.getInstance().transitionToStage(new GameOver(), 300);
             this.stopSound("theme");
           }
 
@@ -90,7 +89,7 @@ public class Table extends Stage {
           this.scoreRight++;
 
           if (scoreRight > 9) {
-            this.getWindow().transitionToStage(new GameOver(), 300);
+            Window.getInstance().transitionToStage(new GameOver(), 300);
           }
 
           this.digitRight.switchCostume("2" + scoreRight);

@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.extensions.animation.AnimatedSprite;
-import org.openpatch.scratch.extensions.math.Vector2;
+import org.openpatch.scratch.*;
 
 public class Impact extends AnimatedSprite {
 

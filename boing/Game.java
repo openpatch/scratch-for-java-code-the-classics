@@ -1,6 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.Window;
+import org.openpatch.scratch.*;
 
 public class Game extends Window {
 

@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.Sprite;
-import org.openpatch.scratch.extensions.math.Vector2;
+import org.openpatch.scratch.*;
 
 public class Ball extends Sprite {
 

@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.KeyCode;
-import org.openpatch.scratch.Stage;
+import org.openpatch.scratch.*;
 
 public class Menu extends Stage {
 
@@ -16,15 +15,15 @@ public class Menu extends Stage {
   }
 
   @Override
-  public void whenKeyPressed(int key) {
+  public void whenKeyPressed(KeyCode key) {
 
-    if (key == KeyCode.VK_SPACE) {
-      this.getWindow().transitionToStage(new Table(this.getCurrentBackdropName().equals("menu1")), 300);
+    if (key == KeyCode.SPACE) {
+      Window.getInstance().transitionToStage(new Table(this.getCurrentBackdropName().equals("menu1")), 300);
       this.stopSound("theme");
-    } else if (key == KeyCode.VK_UP) {
+    } else if (key == KeyCode.UP) {
       this.switchBackdrop("menu0");
       this.playSound("up");
-    } else if (key == KeyCode.VK_DOWN) {
+    } else if (key == KeyCode.DOWN) {
       this.switchBackdrop("menu1");
       this.playSound("down");
     }

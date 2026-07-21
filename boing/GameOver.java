@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.KeyCode;
-import org.openpatch.scratch.Stage;
+import org.openpatch.scratch.*;
 
 public class GameOver extends Stage {
 
@@ -10,10 +9,10 @@ public class GameOver extends Stage {
   }
 
   @Override
-  public void whenKeyPressed(int key) {
+  public void whenKeyPressed(KeyCode key) {
 
-    if (key == KeyCode.VK_SPACE) {
-      this.getWindow().transitionToStage(new Menu(), 300);
+    if (key == KeyCode.SPACE) {
+      Window.getInstance().transitionToStage(new Menu(), 300);
     }
   }
 }

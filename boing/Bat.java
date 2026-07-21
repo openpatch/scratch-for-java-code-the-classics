@@ -1,7 +1,6 @@
 package boing;
 
-import org.openpatch.scratch.KeyCode;
-import org.openpatch.scratch.Sprite;
+import org.openpatch.scratch.*;
 
 public class Bat extends Sprite {
 
@@ -63,16 +62,16 @@ public class Bat extends Sprite {
         move = this.ai();
       }
       case P1 -> {
-        if (this.isKeyPressed(KeyCode.VK_UP)) {
+        if (this.isKeyPressed(KeyCode.UP)) {
           move = -table.PLAYER_SPEED;
-        } else if (this.isKeyPressed(KeyCode.VK_DOWN)) {
+        } else if (this.isKeyPressed(KeyCode.DOWN)) {
           move = table.PLAYER_SPEED;
         }
       }
       case P2 -> {
-        if (this.isKeyPressed(KeyCode.VK_W)) {
+        if (this.isKeyPressed(KeyCode.W)) {
           move = -table.PLAYER_SPEED;
-        } else if (this.isKeyPressed(KeyCode.VK_S)) {
+        } else if (this.isKeyPressed(KeyCode.S)) {
           move = table.PLAYER_SPEED;
         }
       }
